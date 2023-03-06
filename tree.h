@@ -9,12 +9,16 @@
 #include <stdlib.h>
 #include <string.h>
 
+/** simple tree structure using string data */
 typedef struct Node {
     char* data;
     struct Node* left;
     struct Node* right;
 } Node;
 
+/** create a node with a string. Will copy the
+ * string into the node so the original can be freed. 
+*/
 Node *createNode(char* data)
 {
     struct Node *newNode = (struct Node *)malloc(sizeof(struct Node));
@@ -43,7 +47,9 @@ void addNode(Node* root, char* data) {
 }
 
 
-/** add a node to tree in a breadth-first manner */
+/** add a node to tree in a breadth-first manner 
+ * for breadth-first addition, it a queue is needed to keep track of locations
+*/
 void addNodeBreadthFirst(Node* root, char* data) {
     struct Node *queue[1000];
     int front = 0, rear = 0;
