@@ -1,27 +1,18 @@
 # Lab: Breadth First Search and Depth First Search on Trees
 
-In this lab 
+In this lab you will explore using [Breadth First Search] and [Depth First Search] on a tree structure. 
+
 
 👉🏽 **Task**
 
-## 📝 Grading Rubric
 
-
-Add (AG) and (MG) next to tiers, add major conditions to meet to pass each tier. 
-
-1. Learning ()
-   * 
-2. Approaching  ()
-   * 
-3. Meets  ()
-   * 
-4. Exceeds  ()
-   * 
-
-
-AG - Auto-graded  
-MG - Manually graded
 
 
 ## 📚 Resources
-Use this section to keep the homework description shorter, and instead talk about additional resources down here (such as tools to use, websites to review, etc)
+* [Ordering Differences of DFS]
+
+
+
+[Ordering Differences of DFS]: https://en.wikipedia.org/wiki/Depth-first_search#Output_of_a_depth-first_search
+[Depth First Search]: https://en.wikipedia.org/wiki/Depth-first_search
+[Breadth First Search]: https://en.wikipedia.org/wiki/Breadth-first_search
