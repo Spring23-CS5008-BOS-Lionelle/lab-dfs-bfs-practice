@@ -8,11 +8,10 @@ With your partner, have one of you walk through the code in [tree.h](tree.h) & [
 
 * What is the purpose of the struct?
 * What is the difference between addNode and addNodeBreadthFirst?
-
-The other partner should walk through [printer.c](printer.c). You should be able to answer the following questions:
-
 * Why would we need to remove `\n` in `read_file_into_tree`?
 * How are we adding nodes to a tree? Given the file [letters.txt](letters.txt), how does the tree look like?
+  
+The other partner should walk through [printer.c](printer.c). You should be able to answer the following questions:
 * Why would be need a queue for a breadth first search? (it may help to draw it out)
 * Would we need a queue for the Depth First Prints? Why or why not?
 
@@ -52,10 +51,10 @@ Inorder would be: `D, B, E, A, F, C, G`. Take a moment to draw out the order bas
 
 ## 👉🏽 **Task** 👈🏽 - Write DFS Prints 
 
-In [printer.c](printer.c), you will find a function `print_bfs` that prints the tree in a breadth first manner. Your task is to write the `print_dfs_preorder`, `print_dfs_postorder`, and `print_dfs_inorder` functions. These functions are much simpler than the `print_bfs` function, as they are recursive functions. It is recommended you get one of the functions working first, as the other other two are very similar with only a change on where you put the print statement.
+In [printer.c](printer.c), you will find a function `print_bfs` that prints the tree in a breadth first manner. Your task is to write the `print_dfs_preorder`, `print_dfs_postorder`, and `print_dfs_inorder` functions. These functions are much simpler than the `print_bfs` function. Also, they are recursive functions. It is recommended you get one of the functions working first, as the other other two are very similar with only a change on where you put the print statement.
 
 ### Testing Print
-To test your breadth first print, you can run the following command:
+To test your breadth first print, you can run the following commands:
 
 ```console
 make 
@@ -106,14 +105,14 @@ Also for the tree:
 * Define a Binary Search Tree. Write out the steps to add a node to a Binary Search Tree, and use a [gnomes_names.txt](gnomes_names.txt) file to draw out the tree that is a BST format. 
   * How many steps is needed to get to `Canonsbass` as compared to just looking line by line in the file? 
 * Discuss how you would implement a Binary Search Tree (BST) using the tree structure we have created.  
-  * You may want to look at add_node() in [tree.c](tree.c) to see how that can be modified to add nodes to a BST.
+  * You may want to look at addNode() in [tree.c](tree.c) to see how that can be modified to add nodes to a BST.
 * If you have time, modify the add node to add as one would in a BST node. `strcmp` can give you the high/low for each node.
 
 
 ## Conclusion
 In this lab, we have learned about the different types of search algorithms, and how they can be used to traverse a tree. We have also learned about the different types of tree traversals, and how they can be used to print out the tree in different orders.
 
-We will come back to the traversal types when we explore graphs, which are a more complex data structure than trees (a tree is actually a simplified graph). Searching is used throughout computer science, and knowing your data and which search is best
+We will come back to the traversal types when we explore graphs, which are a more complex data structure than trees but the fundamentals are the same. Searching is used throughout computer science, and knowing your data and which search is best
 often helps with the efficiency of your program. For a Binary Search Tree (your homework), that is almost exclusively depth first traversal of your code, as you always know "which direction" to traverse until you find the node you are looking for.
 
 ## 📚 Resources
