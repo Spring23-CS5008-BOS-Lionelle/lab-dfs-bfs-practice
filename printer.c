@@ -8,33 +8,19 @@ void print_single_node(Node *node)
 }
 
 /** inOrder DFS print of the Tree.h*/
-void printTree(Node* root) {
-	if (root == NULL) {
-		return;
-	}
-	printTree(root->left);
-	print_single_node(root);
-	printTree(root->right);
+void printTreeInOrder(Node* root) {
+
 }
 
 /** post order DFS print of the Tree.h */
 void printTreePostOrder(Node* root) {
-	if (root == NULL) {
-		return;
-	}
-	printTreePostOrder(root->left);
-	printTreePostOrder(root->right);
-	print_single_node(root);
+
 }
 
 /** pre order DFS print of the Tree.h*/
 void printTreePreOrder(Node* root) {
-	if (root == NULL) {
-		return;
-	}
-	print_single_node(root);
-	printTreePreOrder(root->left);
-	printTreePreOrder(root->right);
+
+
 }
 
 /** iterative breadth-first print of the tree.h*/
@@ -90,20 +76,20 @@ Node* read_file_into_tree(char* filename, Node* root) {
 
 
 
-
-	// load a file from the command line
-	// create a tree	
-	// print the tree in order
-	
-
 int main(int argc, char** argv) {
+	if (argc < 3)
+	{
+		printf("Usage: ./dfs_print.out <filename> <print_type>\n");
+		return 1;
+	}
+
 	Node* root = NULL;
 	root = read_file_into_tree(argv[1], root);
 	char* print_type = argv[2];
 
 	// based on print type, print the tree
 	if (strcmp(print_type, "inorder") == 0) {
-		printTree(root);
+		printTreeInOrder(root);
 	}
 	else if (strcmp(print_type, "postorder") == 0) {
 		printTreePostOrder(root);
