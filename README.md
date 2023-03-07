@@ -4,7 +4,7 @@ In this lab you will explore using [Breadth First Search] and [Depth First Searc
 
 
 ## Code Walkthrough
-With your partner, have one of you walk through the code in [tree.c](tree.c). You should be able to answer the following questions:
+With your partner, have one of you walk through the code in [tree.h](tree.h) & [tree.c](tree.c). You should be able to answer the following questions:
 
 * What is the purpose of the struct?
 * What is the difference between addNode and addNodeBreadthFirst?

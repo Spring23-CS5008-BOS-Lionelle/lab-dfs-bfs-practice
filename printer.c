@@ -52,27 +52,7 @@ void printTreeBreadthFirst(Node* root) {
 
 
 
-/** read a file, and store elements into the tree as they are read*/
-Node* read_file_into_tree(char* filename, Node* root) {
-	FILE* fp = fopen(filename, "r");
-	char line[256];
-	while (fgets(line, sizeof(line), fp)) {
-		int len = strlen(line);
-		if (line[len - 1] == '\n')
-		{
-			line[len - 1] = '\0'; // Replace the newline with null character
-		}
 
-		// if root is null, create a root node
-		if (root == NULL) {
-			root = createNode(line);
-		}else {
-			addNodeBreadthFirst(root, line);
-		}
-	}
-	fclose(fp);
-	return root;
-}
 
 
 
@@ -83,8 +63,7 @@ int main(int argc, char** argv) {
 		return 1;
 	}
 
-	Node* root = NULL;
-	root = read_file_into_tree(argv[1], root);
+	Node* root = read_file_into_tree(argv[1]);
 	char* print_type = argv[2];
 
 	// based on print type, print the tree

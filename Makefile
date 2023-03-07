@@ -1,6 +1,6 @@
-CC=clang   # This variable is which compiler to use, we will use the variable later by $(CC)
-CFLAGS=-Wall  # this variable is command line arguments
-CFILES= printer.c # this variable is the list of files to compile
+CC = clang   # This variable is which compiler to use, we will use the variable later by $(CC)
+CFLAGS = -Wall  # this variable is command line arguments
+CFILES = tree.c printer.c # this variable is the list of files to compile
 
 all: myprogram  #runs target myprogram is nothing is passed into make
 
