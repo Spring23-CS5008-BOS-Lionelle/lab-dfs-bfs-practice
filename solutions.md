@@ -68,7 +68,7 @@ flowchart TD
 
 ```
 
-Needless to say, the tree isn't very balanced while there are algorithms to balance trees, but we won't cover them here. 
+Needless to say, the tree isn't very balanced. While there are algorithms to balance trees, we won't cover them here. 
 
 
 
