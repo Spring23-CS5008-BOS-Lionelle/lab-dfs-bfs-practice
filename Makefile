@@ -10,4 +10,4 @@ myprogram: printer.c  # this is the target, and the dependency
 
 
 clean: #this is a clean target, it removes all the .out files, called via > make clean
-	rm -f *.out
+	rm  *.out
