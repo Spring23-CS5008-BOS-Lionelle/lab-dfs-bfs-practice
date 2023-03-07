@@ -37,8 +37,28 @@ void printTreePreOrder(Node* root) {
 	printTreePreOrder(root->right);
 }
 ```
+---
 
-## BST for gnome_names.txt
+## Breadth First - gnome-names.txt
+This is how the tree should look when nodes are added in a breadth first (opening) manner. 
+
+```mermaid
+flowchart TD
+   Rielkick --> Tinbap
+   Rielkick --> Gnirweet
+   Tinbap --> Callbip
+   Tinbap --> Cyddnum
+   Gnirweet --> Wenzibist
+   Gnirweet --> Luknekut
+   Callbip --> Cisopnort
+   Callbip --> Cienerbur
+   Cyddnum --> Cononsbass
+
+```
+
+---
+
+## Binary Search Tree Structure (BST) for gnome_names.txt
 
 Null/blank spots are added to keep the tree balanced, and to let mermaid render the tree properly. It also makes it 
 easier to see the termination conditions as you traverse the nodes. For example, if you are searching for  the name "Quin", you would traverse the tree hitting NULL where Quin should be, and then you would know that Quin is not in the tree. 
